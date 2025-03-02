@@ -1,0 +1,2 @@
+# Web-Based Conference Day Management System
+ A Web-Based Conference Management System for organizing and managing conference schedules, speakers, and attendees efficiently.  ✨ Features 📅 Schedule Management (sessions, timings, venues) 🎙 Speaker & Panel Management 🏷 Attendee Registration & Tracking 🔔 Reminders & Notifications 📊 Admin Dashboard for Management 🛠 Technologies Used Frontend: HTML, CSS, JavaScript Backend: PHP Database: MySQL
