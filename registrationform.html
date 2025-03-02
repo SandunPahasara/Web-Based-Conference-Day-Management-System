@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href= "registrationform.css">
+
+</head>
+<body>
+    <div class="container">
+        <form class="registration-form" method="POST" action="register.php">
+            <br>
+            <br>
+            <Br>
+            <h2>Registration Form</h2>
+            
+            <label for="name">Name with Initials</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name with initials" required>
+            
+            <label for="Username">User Name</label> 
+            <input id="Username" name="Username" placeholder="Enter your User name" required>
+           
+
+            <label for="Password">Password</label> 
+            <input id="Password" name="Password" placeholder="Enter your Password"required>
+          
+
+            <label for="nic">NIC / Passport No</label>
+            <input type="text" id="nic" name="nic" placeholder="Enter your NIC/Passport No" required>
+            
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+            
+            <label for="mobile">Mobile Number</label>
+            <input type="tel" id="mobile" name="mobile" placeholder="Enter your mobile number" required>
+            
+            <label for="Session">Session</label>
+            <select id="Session" name="Session" required>
+                <option value="" disabled selected>Enter the session</option>
+                <option value="Software engineering">Software engineering</option>
+                <option value="Computer programming ">Computer programming </option>
+                <option value="Data Science">Data Science</option>
+                <option value="Web development">Web development</option>
+                <option value="Operating system ">Operating system </option>
+            </select>
+
+        
+            <button type="submit">Submit</button>
+            <p>Already have an account? <a href="Sign in.html">Log in here.</a></p>
+        </form>
+        
+    </div>
+</body>
+</html>
