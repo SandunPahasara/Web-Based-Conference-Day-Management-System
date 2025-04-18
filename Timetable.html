@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conference Timetable</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #c60cde, rgb(68, 3, 247), #09e9cf); /* Gradient with blue shades */
+            background-size: 400% 400%; /* For smooth animation */
+            animation: gradientAnimation 15s ease infinite; /* Add animation for a dynamic effect */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: #ffffff;
+        }
+    
+        /* Gradient Animation */
+        @keyframes gradientAnimation {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+    
+        .timetable-container {
+            background: rgba(0, 0, 51, 0.9);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.6);
+            width: 90%;
+            max-width: 1000px;
+            text-align: center;
+        }
+    
+        .timetable-title {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 28px;
+            font-weight: bold;
+            color: #00bfff;
+        }
+    
+        table {
+            width: 100%; /* Make the table take full width of the container */
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+    
+        th, td {
+            border: 1px solid #00bfff;
+            padding: 15px; /* Increase padding for better spacing */
+            text-align: center;
+            font-size: 16px; /* Slightly increase font size */
+        }
+    
+        th {
+            background-color: #0056b3;
+            color: #fff;
+            font-weight: bold;
+        }
+    
+        td {
+            background-color: rgba(240, 248, 255, 0.8);
+            color: #000;
+        }
+    
+        .btn {
+            display: block;
+            width: 200px; /* Wider button */
+            margin: 0 auto;
+            padding: 12px;
+            background: #007bff;
+            color: #fff;
+            text-align: center;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 16px;
+            transition: background 0.3s;
+        }
+    
+        .btn:hover {
+            background: #0056b3;
+        }
+    </style>
+    
+</head>
+<body>
+    <div class="timetable-container">
+        <h1 class="timetable-title">Conference Timetable</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Session</th>
+                    <th>Lecture</th>
+                    <th>Date(Y/M/D)</th>
+                    <th>Time Duration </th>
+                    <th>Lecture</th>
+                    <th>Location</th>
+                    
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Session 1</td>
+                    <td>Web development</td>
+                    <td>2025-01-01</td>
+                    <td>9:00 AM - 5:00 PM</td>
+                    <td>Dr. Kalpana Galappaththi</td>
+                    <td>ITUM Lecture Hall U1212</td>
+                </tr>
+                <tr>
+                    <td>Session 2</td>
+                    <td>Software engineering</td>
+                    <td>2025-01-05</td>
+                    <td>9.00 AM - 5:00 PM</td>
+                    <td>Ms. D. A. S. Ruwanmini</td>
+                    <td>ITUM Lecture Hall U1212</td>
+                </tr>
+                <tr>
+                    <td>Session 3</td>
+                    <td>Computer programming</td>
+                    <td>2025-01-20</td>
+                    <td>9:00 AM - 5.00 PM</td>
+                    <td>Mr. Don Withanage</td>
+                    <td>ITUM Lecture Hall U1211</td>
+                </tr>
+                <tr>
+                    <td>Session 4</td>
+                    <td>Data Science</td>
+                    <td>2025-01-25</td>
+                    <td>9.00 AM - 3:00 PM</td>
+                    <td>Mrs. A. U. P. Athukorala</td>
+                    <td>ITUM Lecture Hall U1212</td>
+                </tr>
+                
+                <tr>
+                    <td>Session 5</td>
+                    <td>Operating system</td>
+                    <td>2025-02-10</td>
+                    <td>9:00 AM - 5:30 PM</td>
+                    <td>Ms. Sithara Madubashini</td>
+                    <td>ITUM Lecture Hall U1211</td>
+                </tr>
+            </tbody>
+        </table>
+        <a href="registrationform.html" class="btn">Register Now</a>
+    </div>
+</body>
+</html>
